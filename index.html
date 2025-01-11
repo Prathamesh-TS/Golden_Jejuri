@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
     <title>Document</title>
@@ -14,9 +15,9 @@
 <body>
     <main>
         <section>
-            <nav>
-                <h1><i class="ri-shining-2-fill"></i>Golden Jejuri</h1>
-                <div class="part2">
+            <!-- <nav>
+                <h1 class="text-xl">Golden Jejuri</h1>
+                <div class="part2 hidden">
                     <h4>About Us</h4>
                     <h4>Services</h4>
                     <h4>Use Cases</h4>
@@ -24,14 +25,71 @@
                     <h4>Blog</h4>
                     <button>Request a quote</button>
                 </div>
+                <div class="mobile_menu w-full flex justify-center">
+                    <details 
+                        class="px-8 py-4 mt-4 w-[80%] rounded-lg bg-yellow-500 transition-all duration-300 ease-in-out relative"
+                        ontoggle="this.open ? this.classList.add('bg-yellow-500') : this.classList.remove('bg-yellow-500')"
+                    >
+                        <summary class="menu absolute top-2 right-4 cursor-pointer">
+                            <i class="ri-menu-3-line text-2xl"></i>
+                        </summary>
+                        <div class="mt-6 flex flex-col items-center space-y-4">
+                            <h4 class="hover:text-yellow-700 cursor-pointer">Home</h4>
+                            <h4 class="hover:text-yellow-700 cursor-pointer">About</h4>
+                            <h4 class="hover:text-yellow-700 cursor-pointer">Projects</h4>
+                            <h4 class="hover:text-yellow-700 cursor-pointer">Gallery</h4>
+                            <h4 class="hover:text-yellow-700 cursor-pointer">Contact</h4>
+                        </div>
+                    </details>
+                </div>
+            </nav> -->
+
+            <nav class="w-full h-16 bg-white flex items-center justify-between px-6 shadow-lg relative">
+                <!-- Logo -->
+                <h1 class="text-xl font-bold">Golden Jejuri</h1>
+            
+                <!-- Desktop Menu -->
+                <div class="part2 hidden lg:flex space-x-8">
+                    <h4 class="hover:text-yellow-700 cursor-pointer">About Us</h4>
+                    <h4 class="hover:text-yellow-700 cursor-pointer">Services</h4>
+                    <h4 class="hover:text-yellow-700 cursor-pointer">Use Cases</h4>
+                    <h4 class="hover:text-yellow-700 cursor-pointer">Pricing</h4>
+                    <h4 class="hover:text-yellow-700 cursor-pointer">Blog</h4>
+                    <button class="px-4 py-2 rounded-lg">
+                        Request a quote
+                    </button>
+                </div>
+            
+                <!-- Mobile Menu (Hamburger) -->
+                <div class="mobile_menu lg:hidden">
+                    <details 
+                        class="relative"
+                        ontoggle="this.open ? this.classList.add('bg-yellow-500 rounded-md') : this.classList.remove('bg-yellow-500')"
+                    >
+                        <!-- Hamburger Icon -->
+                        <summary class="menu cursor-pointer">
+                            <i class="ri-menu-3-line text-2xl"></i>
+                        </summary>
+            
+                        <!-- Dropdown Menu -->
+                        <div class="absolute right-0 top-full mt-2 w-[80vw] bg-yellow-500 rounded-lg shadow-lg py-4 flex flex-col items-center space-y-4 z-10">
+                            <h4 class="hover:text-yellow-700 text-white cursor-pointer">Home</h4>
+                            <h4 class="hover:text-yellow-700 text-white cursor-pointer">About</h4>
+                            <h4 class="hover:text-yellow-700 text-white cursor-pointer">Projects</h4>
+                            <h4 class="hover:text-yellow-700 text-white cursor-pointer">Gallery</h4>
+                            <h4 class="hover:text-yellow-700 text-white cursor-pointer">Contact</h4>
+                        </div>
+                    </details>
+                </div>
             </nav>
+            
         </section>
 
         <section>
             <div class="page2">
                 <div class="move">
                     <div class="marquee">
-                        <h1>THRIVE BEYOND LIMITS</h1>
+                        <h1>GOLDEN JEJURI LIMITS.</h1>
                         <img src="/public/arrow-br.svg">
                     </div>
                     <div class="marquee">
@@ -39,11 +97,15 @@
                         <img src="/public/arrow-br.svg">
                     </div>
                     <div class="marquee">
-                        <h1>THRIVE BEYOND LIMITS</h1>
+                        <h1>GOLDEN JEJURI LIMITS.</h1>
                         <img src="/public/arrow-br.svg">
                     </div>
                     <div class="marquee">
                         <h1>THRIVE BEYOND LIMITS</h1>
+                        <img src="/public/arrow-br.svg">
+                    </div>
+                    <div class="marquee">
+                        <h1>GOLDEN JEJURI LIMITS.</h1>
                         <img src="/public/arrow-br.svg">
                     </div>
                     <div class="marquee">
