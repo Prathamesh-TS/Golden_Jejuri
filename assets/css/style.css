@@ -517,7 +517,7 @@ body {
 .benefit-title {
   font-size: 20px;
   font-weight: bold;
-  color: #000;
+  color: #BF8A36;
   margin-top: 20px; /* Space below the icon */
   margin-bottom: 10px;
   text-align: left;
@@ -564,4 +564,11 @@ body {
   text-transform: uppercase;
   text-align:left;
   margin-left: 100px;
+  color: black;
+}
+.benefits-section{
+  background-color: white;
+  padding-bottom: 50px;
+  margin: 15px;
+  border-radius: 20px;
 }
