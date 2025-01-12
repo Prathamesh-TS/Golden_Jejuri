@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Golden Jejuri</title>
@@ -14,7 +14,7 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <img src="./assets/logo1" alt="Krishnav Developers Logo">
+            <img src="./assets/images/logo1.webp" alt="Krishnav Developers Logo">
         </div>
         <nav class="menu">
             <ul>
@@ -26,7 +26,7 @@
             </ul>
         </nav>
         <div class="logo">
-            <img src="./assets/logo2" alt="Golden Jejuri Logo">
+            <img src="./assets/images/logo2.webp" alt="Golden Jejuri Logo">
         </div>
     </header>
     <main>
@@ -65,13 +65,13 @@
         <section class="hero">
             <div class="carousel">
                 <div class="carousel-slide">
-                    <img src="./assets/hero1.jpg" alt="Talent Showcase 1">
+                    <img src="./assets/images/hero1.webp" alt="Talent Showcase 1">
                 </div>
                 <div class="carousel-slide">
-                    <img src="./assets/hero2.jpg" alt="Talent Showcase 2">
+                    <img src="./assets/images/hero2.webp" alt="Talent Showcase 2">
                 </div>
                 <div class="carousel-slide">
-                    <img src="./assets/hero3.jpg" alt="Talent Showcase 3">
+                    <img src="./assets/images/hero3.webp" alt="Talent Showcase 3">
                 </div>
             </div>
             <div class="hero-content">
@@ -139,6 +139,69 @@
             </div>
         </section>
 
+        <section class="benefits-section">
+            <h1 class="benefits-title">Benefits</h1>
+            
+            <!-- First Row: 2 Rectangular Cards -->
+            <div class="benefits-container first-row">
+                <div class="benefit-card rectangular-card">
+                    <!-- SVG Icon Added Here -->
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
+                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    </svg>
+                    <h2 class="benefit-title">Tailored Solutions</h2>
+                    <p class="benefit-description">
+                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                    </p>
+                  </div>
+                  <div class="benefit-card rectangular-card">
+                    <!-- SVG Icon Added Here -->
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
+                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    </svg>
+                    <h2 class="benefit-title">Tailored Solutions</h2>
+                    <p class="benefit-description">
+                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                    </p>
+                  </div>
+            </div>
+          
+            <!-- Second Row: 3 Smaller Cards -->
+            <div class="benefits-container second-row">
+                <div class="benefit-card">
+                    <!-- SVG Icon Added Here -->
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
+                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    </svg>
+                    <h2 class="benefit-title">Tailored Solutions</h2>
+                    <p class="benefit-description">
+                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                    </p>
+                  </div>
+                  <div class="benefit-card">
+                    <!-- SVG Icon Added Here -->
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
+                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    </svg>
+                    <h2 class="benefit-title">Tailored Solutions</h2>
+                    <p class="benefit-description">
+                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                    </p>
+                  </div>
+                  <div class="benefit-card">
+                    <!-- SVG Icon Added Here -->
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
+                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    </svg>
+                    <h2 class="benefit-title">Tailored Solutions</h2>
+                    <p class="benefit-description">
+                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                    </p>
+                  </div>
+            </div>
+          </section>
+          
+          
         <!-- USPS Section -->
 
         <section class="p-2 flex flex-col items-center">
@@ -154,7 +217,7 @@
                 <div
                     class="card shadow-xl w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
                     <div class="w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
-                        <img src="/assets/benefit1.jpg" class="w-full h-full rounded-t-md object-cover">
+                        <img src="/assets/images/benefit1.webp" class="w-full h-full rounded-t-md object-cover">
                     </div>
                     <h1 class="text-2xl text-center font-semibold">Strategic Location</h1>
                     <p class="w-full text-md font-normal text-center mb-4 px-2 ">Positioned at the heart of Pune's
@@ -163,7 +226,7 @@
                 <div
                     class="card shadow-xl w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
                     <div class="w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
-                        <img src="/assets/benefit2.jpg" class="w-full h-full rounded-t-md object-cover" alt="">
+                        <img src="/assets/images/benefit2.webp" class="w-full h-full rounded-t-md object-cover" alt="">
                     </div>
                     <h1 class="text-2xl text-center font-semibold">Unmatched Connectivity</h1>
                     <p class="w-full text-md font-normal text-center mb-4 px-2 ">Proposed Purandar International Airport
@@ -172,7 +235,7 @@
                 <div
                     class="card shadow-xl w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
                     <div class="w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
-                        <img src="/assets/benefit3.jpg" class="w-full h-full rounded-t-md object-cover" alt="">
+                        <img src="/assets/images/benefit3.webp" class="w-full h-full rounded-t-md object-cover" alt="">
                     </div>
                     <h1 class="text-2xl text-center font-semibold">Swargate-Saswad<br> Metro Extension</h1>
                     <p class="w-full text-md font-normal text-center mb-4 px-2 ">Seamless access to Pune's core business
@@ -186,7 +249,7 @@
                 <div
                     class="card shadow-xl w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
                     <div class="w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
-                        <img src="/assets/benefit4.jpg" class="w-full h-full rounded-t-md object-cover" alt="">
+                        <img src="/assets/images/benefit4.webp" class="w-full h-full rounded-t-md object-cover" alt="">
                     </div>
                     <h1 class="text-2xl text-center font-semibold">Seamless Connectivty</h1>
                     <p class="w-full text-md font-normal text-center mb-4 px-2 ">Six-lane Saswad Highway connecting
@@ -195,7 +258,7 @@
                 <div
                     class="card shadow-xl w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
                     <div class="w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
-                        <img src="/assets/benefit5.jpg" class="w-full h-full rounded-t-md object-cover" alt="">
+                        <img src="/assets/images/benefit5.webp" class="w-full h-full rounded-t-md object-cover" alt="">
                     </div>
                     <h1 class="text-2xl text-center font-semibold">Natural Advantage</h1>
                     <p class="w-full text-md font-normal text-center mb-4 px-2 ">Close to the resourceful Nazare Dam, ensuring sustainable development and natural reserves.</p>
@@ -203,7 +266,7 @@
                 <div
                     class="card shadow-xl w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
                     <div class="w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
-                        <img src="/assets/benefit6.jpg" class="w-full h-full rounded-t-md object-cover" alt="">
+                        <img src="/assets/images/benefit6.webp" class="w-full h-full rounded-t-md object-cover" alt="">
                     </div>
                     <h1 class="text-2xl text-center font-semibold">Future-Ready Infrastructure</h1>
                     <p class="w-full text-md font-normal text-center mb-4 px-2 ">Positioned at the heart of Pune's
@@ -218,7 +281,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         crossorigin="anonymous"></script>
-    <script src="/scripts/script.js"></script>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 
 </html>
