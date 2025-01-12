@@ -93,6 +93,7 @@ nav button {
   height: 100%;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .carousel-slide img {
@@ -261,7 +262,7 @@ nav button {
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 
   .hero-content p {
