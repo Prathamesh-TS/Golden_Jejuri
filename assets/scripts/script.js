@@ -92,4 +92,23 @@ tl2.from(".services", { y: 30, opacity: 0, duration: 0.4 })
    
    // Start the carousel
    setInterval(moveCarousel, 3000);
-   
+
+   const tl3 = gsap.timeline();
+
+
+   //Image Gallery Animation
+
+   function galleryAnimate(){
+
+   tl3.to(".image-content .slide" , {
+        x: "-200%",
+        duration:12,
+        stagger: 0.15,
+        ease:"none",
+        repeat:-1,
+        yoyo:true,
+
+   })
+}
+
+galleryAnimate();
