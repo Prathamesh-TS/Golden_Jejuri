@@ -81,34 +81,34 @@ tl2.from(".services", { y: 30, opacity: 0, duration: 0.4 })
    let currentIndex = 0;
    
    // Auto-carousel function
-   function moveCarousel() {
-     currentIndex++;
-     if (currentIndex >= slides.length) {
-       currentIndex = 0;
-     }
-     const offset = currentIndex * -100;
-     carousel.style.transform = `translateX(${offset}%)`;
-   }
+//    function moveCarousel() {
+//      currentIndex++;
+//      if (currentIndex >= slides.length) {
+//        currentIndex = 0;
+//      }
+//      const offset = currentIndex * -100;
+//      carousel.style.transform = `translateX(${offset}%)`;
+//    }
    
-   // Start the carousel
-   setInterval(moveCarousel, 3000);
+//    // Start the carousel
+//    setInterval(moveCarousel, 3000);
 
-   const tl3 = gsap.timeline();
+//    const tl3 = gsap.timeline();
 
 
-   //Image Gallery Animation
+//    //Image Gallery Animation
 
-   function galleryAnimate(){
+//    function galleryAnimate(){
 
-   tl3.to(".image-content .slide" , {
-        x: "-200%",
-        duration:12,
-        stagger: 0.15,
-        ease:"none",
-        repeat:-1,
-        yoyo:true,
+//    tl3.to(".image-content .slide" , {
+//         x: "-200%",
+//         duration:30,
+//         stagger: 0.15,
+//         ease:"none",
+//         repeat:-1,
 
-   })
-}
+//    })
+// }
 
-galleryAnimate();
+// galleryAnimate();
+
