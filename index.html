@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <header class="navbar hidden lg:flex">
         <div class="logo">
             <img src="./assets/images/logo1.webp" alt="Krishnav Developers Logo">
         </div>
-        <nav class="menu">
+        <nav class="menu hidden lg:flex">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -29,8 +29,40 @@
             <img src="./assets/images/logo2.webp" alt="Golden Jejuri Logo">
         </div>
     </header>
+
+    <nav class="w-full lg:hidden h-16 bg-white flex items-center justify-between px-6 shadow-lg relative"> 
+            
+            <h1 class="text-xl font-bold">Golden Jejuri</h1>
+
+          
+            <div class="part2 hidden lg:flex space-x-8">
+                <h4 class="hover:text-yellow-700 cursor-pointer">About Us</h4>
+                <h4 class="hover:text-yellow-700 cursor-pointer">Services</h4>
+                <h4 class="hover:text-yellow-700 cursor-pointer">Use Cases</h4>
+                <h4 class="hover:text-yellow-700 cursor-pointer">Pricing</h4>
+                <h4 class="hover:text-yellow-700 cursor-pointer">Blog</h4>
+                <button class="px-4 py-2 rounded-lg">Request a quote</button>
+            </div>
+
+            
+            <div class="mobile_menu lg:hidden">
+                <details class="relative" ontoggle="this.open ? this.classList.add('bg-yellow-500') : this.classList.remove('bg-yellow-500')">
+                    <summary class="menu cursor-pointer">
+                        <i class="ri-menu-3-line text-2xl"></i>
+                    </summary>
+                    <div class="absolute right-0 top-full mt-2 w-[80vw] bg-yellow-500 rounded-lg shadow-lg py-4 flex flex-col items-center space-y-4 z-10">
+                        <h4 class="hover:text-yellow-700 text-white cursor-pointer">Home</h4>
+                        <h4 class="hover:text-yellow-700 text-white cursor-pointer">About</h4>
+                        <h4 class="hover:text-yellow-700 text-white cursor-pointer">Projects</h4>
+                        <h4 class="hover:text-yellow-700 text-white cursor-pointer">Gallery</h4>
+                        <h4 class="hover:text-yellow-700 text-white cursor-pointer">Contact</h4>
+                    </div>
+                </details>
+            </div>
+        </nav>
+
     <main>
-       
+
         <!-- Hero Section -->
         <section class="hero">
             <div class="carousel">
@@ -52,29 +84,33 @@
         </section>
 
         <!-- Marquee Section -->
+
         <section>
-            <div class="page2">
-                <div class="move">
-                    <div class="marquee">
-                        <h1>30+ Lifestyle Amenities – Clubhouse, Swimming Pool, and More</h1>
-                        <img src="/assets/images/public/arrow-br.svg" />
-                    </div>
-                    <div class="marquee">
-                        <h1>Strategic Location Near Upcoming Purandar Airport!</h1>
-                        <img src="/assets/images/public/arrow-br.svg" />
-                    </div>
-                    <div class="marquee">
-                        <h1>Special Discounts on Bulk Purchases – Contact Us Today!</h1>
-                        <img src="/assets/images/public/arrow-br.svg" />
-                    </div>
-                    <div class="marquee">
-                        <h1>Call Now: +91 XXXXXXXXXX | Schedule a Site Visit Today!</h1>
-                        <img src="/assets/images/public/arrow-br.svg" />
-                    </div>
+            <div class="move bg-yellow-500 flex items-center overflow-hidden ">
+                <div class="marquee shrink-0 flex items-center ">
+                    <h1 class="text-2xl md:text-4xl">THRIVE BEYOND LIMITS</h1>
+                    <img class="h-4 lg:h-8 " src="/assets/images/public/arrow-br.svg">
+                </div>
+                <div class="marquee shrink-0 flex items-center ">
+                    <h1 class="text-2xl md:text-4xl">THRIVE BEYOND LIMITS</h1>
+                    <img class="h-4 lg:h-8 " src="/assets/images/public/arrow-br.svg">
+                </div>
+                <div class="marquee shrink-0 flex items-center ">
+                    <h1 class="text-2xl md:text-4xl">THRIVE BEYOND LIMITS</h1>
+                    <img class="h-4 lg:h-8 " src="/assets/images/public/arrow-br.svg">
+                </div>
+                <div class="marquee shrink-0 flex items-center ">
+                    <h1 class="text-2xl md:text-4xl">THRIVE BEYOND LIMITS</h1>
+                    <img class="h-4 lg:h-8 " src="/assets/images/public/arrow-br.svg">
+                </div>
+                <div class="marquee shrink-0 flex items-center ">
+                    <h1 class="text-2xl md:text-4xl">THRIVE BEYOND LIMITS</h1>
+                    <img class="h-4 lg:h-8 " src="/assets/images/public/arrow-br.svg">
                 </div>
             </div>
         </section>
-<!-- about section -->
+
+        <!-- about section -->
         <section class="about-section">
             <div class="left-content">
                 <h2>Golden Jejuri: Pune's Next Growth Corridor</h2>
@@ -113,67 +149,77 @@
 
         <section class="benefits-section">
             <h1 class="benefits-title">Benefits</h1>
-            
+
             <!-- First Row: 2 Rectangular Cards -->
             <div class="benefits-container first-row">
                 <div class="benefit-card rectangular-card">
                     <!-- SVG Icon Added Here -->
-                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
-                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24" fill="black">
+                        <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z" />
                     </svg>
                     <h2 class="benefit-title">Tailored Solutions</h2>
                     <p class="benefit-description">
-                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                        Every project we take on is customized to align perfectly with your business goals and brand
+                        personality.
                     </p>
-                  </div>
-                  <div class="benefit-card rectangular-card">
+                </div>
+                <div class="benefit-card rectangular-card">
                     <!-- SVG Icon Added Here -->
-                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
-                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24" fill="black">
+                        <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z" />
                     </svg>
                     <h2 class="benefit-title">Tailored Solutions</h2>
                     <p class="benefit-description">
-                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                        Every project we take on is customized to align perfectly with your business goals and brand
+                        personality.
                     </p>
-                  </div>
+                </div>
             </div>
-          
+
             <!-- Second Row: 3 Smaller Cards -->
             <div class="benefits-container second-row">
                 <div class="benefit-card">
                     <!-- SVG Icon Added Here -->
-                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
-                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24" fill="black">
+                        <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z" />
                     </svg>
                     <h2 class="benefit-title">Tailored Solutions</h2>
                     <p class="benefit-description">
-                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                        Every project we take on is customized to align perfectly with your business goals and brand
+                        personality.
                     </p>
-                  </div>
-                  <div class="benefit-card">
+                </div>
+                <div class="benefit-card">
                     <!-- SVG Icon Added Here -->
-                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
-                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24" fill="black">
+                        <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z" />
                     </svg>
                     <h2 class="benefit-title">Tailored Solutions</h2>
                     <p class="benefit-description">
-                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                        Every project we take on is customized to align perfectly with your business goals and brand
+                        personality.
                     </p>
-                  </div>
-                  <div class="benefit-card">
+                </div>
+                <div class="benefit-card">
                     <!-- SVG Icon Added Here -->
-                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="black">
-                      <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z"/>
+                    <svg class="benefit-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24" fill="black">
+                        <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3z" />
                     </svg>
                     <h2 class="benefit-title">Tailored Solutions</h2>
                     <p class="benefit-description">
-                      Every project we take on is customized to align perfectly with your business goals and brand personality.
+                        Every project we take on is customized to align perfectly with your business goals and brand
+                        personality.
                     </p>
-                  </div>
+                </div>
             </div>
-          </section>
-          
-          
+        </section>
+
+
         <!-- USPS Section -->
 
         <section class="p-2 flex flex-col items-center">
@@ -183,7 +229,7 @@
                 </h4>
                 <p class="">Linking Progress and Prosperity</p>
             </div>
-            
+
             <div
                 class="h-auto py-12 w-full bg-white rounded-xl flex flex-col lg:flex-row lg:px-4 items-center gap-12 justify-center">
                 <div
@@ -233,7 +279,8 @@
                         <img src="/assets/images/benefit5.webp" class="w-full h-full rounded-t-md object-cover" alt="">
                     </div>
                     <h1 class="text-2xl text-center font-semibold">Natural Advantage</h1>
-                    <p class="w-full text-md font-normal text-center mb-4 px-2 ">Close to the resourceful Nazare Dam, ensuring sustainable development and natural reserves.</p>
+                    <p class="w-full text-md font-normal text-center mb-4 px-2 ">Close to the resourceful Nazare Dam,
+                        ensuring sustainable development and natural reserves.</p>
                 </div>
                 <div
                     class="card shadow-xl w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
@@ -248,15 +295,40 @@
             </div>
         </section>
 
+        <!-- Gallery Section  -->
+
+        <section class="w-full h-screen px-2 py-4">
+            <div class="w-full h-full">
+                <div class="w-full">
+                    <h1 class="text-2xl lg:text-3xl font-medium text-center mb-4">Image Gallery</h1>
+                </div>
+                <div class="h-1/2 lg:h-[70%] w-full image-content flex nowrap overflow-x-auto gap-2 px-8">
+                    <img src="/assets/images/hero1.webp" class="w-full h-full object-cover rounded-xl slide " alt="">
+                    <img src="/assets/images/hero2.webp" class="w-full h-full object-cover rounded-xl slide " alt="">
+                    <img src="/assets/images/hero3.webp" class="w-full h-full object-cover rounded-xl slide " alt="">
+                    <!-- <img src="/assets/images/hero1.webp" class="w-full h-full object-cover rounded-xl slide " alt="">
+                <img src="/assets/images/hero2.webp" class="w-full h-full object-cover rounded-xl slide " alt="">
+                <img src="/assets/images/hero3.webp" class="w-full h-full object-cover rounded-xl slide " alt="">
+                <img src="/assets/images/hero1.webp" class="w-full h-full object-cover rounded-xl slide " alt="">
+                <img src="/assets/images/hero2.webp" class="w-full h-full object-cover rounded-xl slide " alt="">
+                <img src="/assets/images/hero3.webp" class="w-full h-full object-cover rounded-xl slide " alt="">
+                <img src="/assets/images/hero1.webp" class="w-full h-full object-cover rounded-xl slide " alt=""> -->
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="w-full h-auto md:h-[20vh] bg-black flex flex-col md:flex-row px-4 py-4 items-center justify-between gap-4">
-            <div class="w-[30%] h-full flex items-center justify-center">
-                <h1 class="text-sm text-white">The Project has been registered via MahaRERA number : xxxxxxxxxx and the details are available on the website 
-                    <a href="#"> <u>https://maharera.mahaonline.gov.in</u></a> 
-                    under registered projects.</h1>
-            </div>
-            <div class="flex items-center justify-center gap-8 ">
+    <footer
+        class="w-full h-auto md:h-[20vh] bg-black flex flex-col md:flex-row px-4 py-4 items-center justify-between gap-4">
+        <div class="w-[30%] h-full flex items-center justify-center">
+            <h1 class="text-sm text-white">The Project has been registered via MahaRERA number : xxxxxxxxxx and the
+                details are available on the website
+                <a href="#"> <u>https://maharera.mahaonline.gov.in</u></a>
+                under registered projects.
+            </h1>
+        </div>
+        <div class="flex items-center justify-center gap-8 ">
             <div class="w-full h-[20%] flex items-center bg-white justify-center">
                 <img class="w-[80px] h-[80px] object-cover" src="/assets/images/logo2.webp">
             </div>
