@@ -632,7 +632,7 @@ body {
   }
 
   .benefit-description {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .benefits-title {
@@ -642,7 +642,7 @@ body {
   }
 
   .benefits-section {
-    padding: 20px 10px;
+    padding: 20px 20px;
   }
 }
 
@@ -738,7 +738,7 @@ body {
 /* Card Title */
 .card-title {
   font-size: 1.5rem;
-  color: #34495e;
+  color: #c5964a;
   font-weight: 600;
   margin: 1rem 0;
   text-align: center;
@@ -747,7 +747,7 @@ body {
 /* Card Description */
 .card-description {
   font-size: 1rem;
-  color: #7f8c8d;
+  color: #000;
   text-align: center;
   padding: 0 1rem;
 }
@@ -785,11 +785,11 @@ body {
   }
 
   .card-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .card-description {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .connectivity-card-container {
