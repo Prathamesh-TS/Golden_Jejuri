@@ -662,13 +662,17 @@ body {
 }
 
 /* Connectivity Section */
-/* Connectivity Section */
-.connectivity-section {
+/* .connectivity-section {
   padding: 20px;
   border-radius: 16px;
   width: 100%;
   box-sizing: border-box;
-}
+} */
+/* @media (max-width:768px) {
+  .connectivity-section{
+    padding: 5px;
+  }
+} */
 
 /* Section Header */
 .connectivity-title {
