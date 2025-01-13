@@ -1,577 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Golden Jejuri</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="navbar hidden lg:flex">
-      <div class="logo">
-        <img src="./assets/images/logo1.webp" alt="Krishnav Developers Logo" />
-      </div>
-      <nav class="menu hidden lg:flex">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#location">Location</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <img src="./assets/images/logo2.webp" alt="Golden Jejuri Logo" />
-      </div>
+        <div class="logo">
+            <img src="./assets/images/logo1.webp" alt="Krishnav Developers Logo" />
+        </div>
+        <nav class="menu hidden lg:flex">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="./assets/images/logo2.webp" alt="Golden Jejuri Logo" />
+        </div>
     </header>
 
-    <nav
-      class="w-full lg:hidden h-16 bg-white flex items-center justify-between px-6 shadow-lg relative"
-    >
-      <h1 class="text-xl font-bold">Golden Jejuri</h1>
+    <nav class="w-full lg:hidden h-16 bg-white flex items-center justify-between px-6 shadow-lg relative">
+        <h1 class="text-xl font-bold">Golden Jejuri</h1>
 
-      <div class="part2 hidden lg:flex space-x-8">
-        <h4 class="hover:text-yellow-700 cursor-pointer">About Us</h4>
-        <h4 class="hover:text-yellow-700 cursor-pointer">Services</h4>
-        <h4 class="hover:text-yellow-700 cursor-pointer">Use Cases</h4>
-        <h4 class="hover:text-yellow-700 cursor-pointer">Pricing</h4>
-        <h4 class="hover:text-yellow-700 cursor-pointer">Blog</h4>
-        <button class="px-4 py-2 rounded-lg">Request a quote</button>
-      </div>
+        <div class="part2 hidden lg:flex space-x-8">
+            <h4 class="hover:text-yellow-700 cursor-pointer">About Us</h4>
+            <h4 class="hover:text-yellow-700 cursor-pointer">Services</h4>
+            <h4 class="hover:text-yellow-700 cursor-pointer">Use Cases</h4>
+            <h4 class="hover:text-yellow-700 cursor-pointer">Pricing</h4>
+            <h4 class="hover:text-yellow-700 cursor-pointer">Blog</h4>
+            <button class="px-4 py-2 rounded-lg">Request a quote</button>
+        </div>
 
-      <div class="mobile_menu lg:hidden">
-        <details
-          class="relative"
-          ontoggle="this.open ? this.classList.add('bg-yellow-500') : this.classList.remove('bg-yellow-500')"
-        >
-          <summary class="menu cursor-pointer">
-            <i class="ri-menu-3-line text-2xl"></i>
-          </summary>
-          <div
-            class="absolute right-0 top-full mt-2 w-[80vw] bg-yellow-500 rounded-lg shadow-lg py-4 flex flex-col items-center space-y-4 z-10"
-          >
-            <h4 class="hover:text-yellow-700 text-white cursor-pointer">
-              Home
-            </h4>
-            <h4 class="hover:text-yellow-700 text-white cursor-pointer">
-              About
-            </h4>
-            <h4 class="hover:text-yellow-700 text-white cursor-pointer">
-              Projects
-            </h4>
-            <h4 class="hover:text-yellow-700 text-white cursor-pointer">
-              Gallery
-            </h4>
-            <h4 class="hover:text-yellow-700 text-white cursor-pointer">
-              Contact
-            </h4>
-          </div>
-        </details>
-      </div>
+        <div class="mobile_menu lg:hidden">
+            <details class="relative"
+                ontoggle="this.open ? this.classList.add('bg-yellow-500') : this.classList.remove('bg-yellow-500')">
+                <summary class="menu cursor-pointer">
+                    <i class="ri-menu-3-line text-2xl"></i>
+                </summary>
+                <div
+                    class="absolute right-0 top-full mt-2 w-[80vw] bg-yellow-500 rounded-lg shadow-lg py-4 flex flex-col items-center space-y-4 z-10">
+                    <h4 class="hover:text-yellow-700 text-white cursor-pointer">
+                        Home
+                    </h4>
+                    <h4 class="hover:text-yellow-700 text-white cursor-pointer">
+                        About
+                    </h4>
+                    <h4 class="hover:text-yellow-700 text-white cursor-pointer">
+                        Projects
+                    </h4>
+                    <h4 class="hover:text-yellow-700 text-white cursor-pointer">
+                        Gallery
+                    </h4>
+                    <h4 class="hover:text-yellow-700 text-white cursor-pointer">
+                        Contact
+                    </h4>
+                </div>
+            </details>
+        </div>
     </nav>
 
     <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="carousel">
-          <div class="carousel-slide">
-            <img src="./assets/images/hero1.webp" alt="Talent Showcase 1" />
-          </div>
-          <div class="carousel-slide">
-            <img src="./assets/images/hero2.webp" alt="Talent Showcase 2" />
-          </div>
-          <div class="carousel-slide">
-            <img src="./assets/images/hero3.webp" alt="Talent Showcase 3" />
-          </div>
-        </div>
-        <div class="hero-content">
-          <h1>Transforming Jejuri</h1>
-          <p>The Golden Hotspot OF OPPORTUNITY</p>
-          <a href="#register" class="cta-button"
-            >Schedule a Site Visit Today!</a
-          >
-        </div>
-      </section>
-
-      <!-- Marquee Section -->
-
-      <section>
-        <div class="move flex items-center overflow-hidden">
-          <div class="marquee shrink-0 flex items-center">
-            <h1 class="text-2xl md:text-4xl">THRIVE BEYOND LIMITS</h1>
-            <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
-          </div>
-          <div class="marquee shrink-0 flex items-center">
-            <h1 class="text-2xl md:text-4xl">30+ Lifestyle Amenities</h1>
-            <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
-          </div>
-          <div class="marquee shrink-0 flex items-center">
-            <h1 class="text-2xl md:text-4xl">30+ Lifestyle Amenities</h1>
-            <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
-          </div>
-          <div class="marquee shrink-0 flex items-center">
-            <h1 class="text-2xl md:text-4xl">Schedule Visit Today!</h1>
-            <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
-          </div>
-          <div class="marquee shrink-0 flex items-center">
-            <h1 class="text-2xl md:text-4xl">THRIVE BEYOND LIMITS</h1>
-            <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
-          </div>
-        </div>
-      </section>
-
-      <!-- about section -->
-      <section class="about-section">
-        <div class="left-content">
-          <h2>
-            <span class="gold">Golden Jejuri:</span> Pune's Next Growth Corridor
-          </h2>
-          <p>
-            Jejuri is set to become Pune's next big growth corridor, driven by
-            infrastructure, connectivity and rising development. As Pune
-            expands, Jejuri stands at the forefront of progress and opportunity
-          </p>
-          <button class="btn">Get Started</button>
-        </div>
-        <div class="right-content">
-          <h1>
-            TURNING EVERY <br />
-            ACRE INTO <span class="highlight">GOLD</span> JEJURI'S NEXT
-            <span class="highlight">BIG LEAP</span> FOR A DECADE.
-          </h1>
-          <br />
-          <p>
-            Golden Jejuri is a visionary real estate initiative in Jejuri, Pune,
-            offering premium Non-Agricultural (NA) plots. Our ready-to-build
-            plots are designed to cater to residential and commercial needs with
-            top-tier infrastructure and a blend of natural and urban living. The
-            location boasts a rich cultural heritage, with proximity to the
-            Khandoba Temple and Morgaon Ganpati Temple, along with scenic beauty
-            offering stunning views of the Nazare Dam and the surrounding
-            mountains.
-          </p>
-          <div class="stats">
-            <div class="stat-item">
-              <h2>10+</h2>
-              <p>Family-Centric Comforts</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="./assets/images/hero1.webp" alt="Talent Showcase 1" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="./assets/images/hero2.webp" alt="Talent Showcase 2" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="./assets/images/hero3.webp" alt="Talent Showcase 3" />
+                </div>
             </div>
-            <div class="stat-item">
-              <h2>30+</h2>
-              <p>Golden Amenities</p>
+            <div class="hero-content">
+                <h1>Transforming Jejuri</h1>
+                <p>The Golden Hotspot OF OPPORTUNITY</p>
+                <a href="#register" class="cta-button">Schedule a Site Visit Today!</a>
             </div>
-            <div class="stat-item">
-              <h2>15+</h2>
-              <p>Recreational Treasures</p>
+        </section>
+
+        <!-- Marquee Section -->
+
+        <section>
+            <div class="move flex items-center overflow-hidden">
+                <div class="marquee shrink-0 flex items-center">
+                    <h1 class="text-2xl md:text-4xl">THRIVE BEYOND LIMITS</h1>
+                    <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
+                </div>
+                <div class="marquee shrink-0 flex items-center">
+                    <h1 class="text-2xl md:text-4xl">30+ Lifestyle Amenities</h1>
+                    <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
+                </div>
+                <div class="marquee shrink-0 flex items-center">
+                    <h1 class="text-2xl md:text-4xl">30+ Lifestyle Amenities</h1>
+                    <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
+                </div>
+                <div class="marquee shrink-0 flex items-center">
+                    <h1 class="text-2xl md:text-4xl">Schedule Visit Today!</h1>
+                    <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
+                </div>
+                <div class="marquee shrink-0 flex items-center">
+                    <h1 class="text-2xl md:text-4xl">THRIVE BEYOND LIMITS</h1>
+                    <img class="h-4 lg:h-8" src="/assets/images/public/arrow-br.svg" />
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- about section -->
+         
+        <section class="about-section">
+            <div class="left-content">
+                <h2>
+                    <span class="gold">Golden Jejuri:</span> Pune's Next Growth Corridor
+                </h2>
+                <p>
+                    Jejuri is set to become Pune's next big growth corridor, driven by
+                    infrastructure, connectivity and rising development. As Pune
+                    expands, Jejuri stands at the forefront of progress and opportunity
+                </p>
+                <button class="btn">Get Started</button>
+            </div>
+            <div class="right-content">
+                <h1>
+                    TURNING EVERY <br />
+                    ACRE INTO <span class="highlight">GOLD</span> JEJURI'S NEXT
+                    <span class="highlight">BIG LEAP</span> FOR A DECADE.
+                </h1>
+                <br />
+                <p>
+                    Golden Jejuri is a visionary real estate initiative in Jejuri, Pune,
+                    offering premium Non-Agricultural (NA) plots. Our ready-to-build
+                    plots are designed to cater to residential and commercial needs with
+                    top-tier infrastructure and a blend of natural and urban living. The
+                    location boasts a rich cultural heritage, with proximity to the
+                    Khandoba Temple and Morgaon Ganpati Temple, along with scenic beauty
+                    offering stunning views of the Nazare Dam and the surrounding
+                    mountains.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h2>10+</h2>
+                        <p>Family-Centric Comforts</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>30+</h2>
+                        <p>Golden Amenities</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>15+</h2>
+                        <p>Recreational Treasures</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Section  -->
 
 
-      <section class="investment-section-container">
-        <div class="investment-content-wrapper">
-          <!-- Left Column -->
-          <div class="investment-info-column">
-            <h2 class="investment-title">Reason to Invest</h2>
-            <p class="investment-text">
-              Jejuri, near Pune, Maharashtra, is experiencing significant development,
-              positioning it as a rising star on Pune's growth map. Key projects
-              contributing to this transformation include:
-            </p>
-            <button class="investment-appointment-button">
-              Schedule Appointment &rarr;
-            </button>
-          </div>
-      
-          <!-- Right Column -->
-          <div class="investment-feature-column">
-            <!-- Infrastructure Growth -->
-            <div class="investment-feature-card">
-              <h3 class="investment-feature-title">Infrastructure Growth</h3>
-              <ul class="investment-feature-list">
-                <li>Purandar Airport</li>
-                <li>Swargate-Saswad Metro Extension</li>
-                <li>IT parks driving growth near Purandar Airport</li>
-                <li>Six-lane Saswad Highway links Hadapsar, Baramati, and NH65.</li>
-              </ul>
-            </div>
-      
-      
-            <!-- Amenities -->
-            <div class="investment-feature-card">
-              <h3 class="investment-feature-title">Amenities</h3>
-              <ul class="investment-feature-list">
-                <li>Recreation: Swimming pool, clubhouse, and amphitheater,etc</li>
-                <li>Sports & Wellness: Courts, jogging track, and yoga spaces,etc</li>
-                <li>Community Spaces: Gardens, seating areas, and kids' play zones,etc</li>
-              </ul>
-            </div>
-      
+        <section class="investment-section-container">
+            <div class="investment-content-wrapper">
+                <!-- Left Column -->
+                <div class="investment-info-column">
+                    <h2 class="investment-title">Reason to Invest</h2>
+                    <p class="investment-text">
+                        Jejuri, near Pune, Maharashtra, is experiencing significant development,
+                        positioning it as a rising star on Pune's growth map. Key projects
+                        contributing to this transformation include:
+                    </p>
+                    <button class="investment-appointment-button">
+                        Schedule Appointment &rarr;
+                    </button>
+                </div>
 
-                        <!-- Tourist Hub -->
-                        <div class="investment-feature-card">
-                            <h3 class="investment-feature-title">Tourist Attractions</h3>
-                            <ul class="investment-feature-list">
-                              <li>Khandoba Temple: Iconic temple and spiritual hub in Jejuri.</li>
-                              <li>Fort Heritage: Explore Jejuri Fort and historic Purandar Fort.</li>
-                              <li>Pilgrimage: Visit the revered Morgaon Ganpati Temple.</li>
-                            </ul>
-                          </div>
-            <!-- USPs -->
-            <div class="investment-feature-card">
-              <h3 class="investment-feature-title">Seamless Convenience</h3>
-              <ul class="investment-feature-list">
-                <li>Healthcare: Multiple hospitals within 10 minutes.</li>
-                <li>Education: Renowned institutes reachable in 30 minutes.</li>
-                <li>Connectivity: Excellent access to highways, metro, and airport. </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
+                <!-- Right Column -->
+                <div class="investment-feature-column">
+                    <!-- Infrastructure Growth -->
+                    <div class="investment-feature-card">
+                        <h3 class="investment-feature-title">Infrastructure Growth</h3>
+                        <ul class="investment-feature-list">
+                            <li>Purandar Airport</li>
+                            <li>Swargate-Saswad Metro Extension</li>
+                            <li>IT parks driving growth near Purandar Airport</li>
+                            <li>Six-lane Saswad Highway links Hadapsar, Baramati, and NH65.</li>
+                        </ul>
+                    </div>
 
-              <!-- Enquiry Button -->
-               
-      <!-- <div class="enquiry-btn">
+
+                    <!-- Amenities -->
+                    <div class="investment-feature-card">
+                        <h3 class="investment-feature-title">Amenities</h3>
+                        <ul class="investment-feature-list">
+                            <li>Recreation: Swimming pool, clubhouse, and amphitheater,etc</li>
+                            <li>Sports & Wellness: Courts, jogging track, and yoga spaces,etc</li>
+                            <li>Community Spaces: Gardens, seating areas, and kids' play zones,etc</li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Tourist Hub -->
+                    <div class="investment-feature-card">
+                        <h3 class="investment-feature-title">Tourist Attractions</h3>
+                        <ul class="investment-feature-list">
+                            <li>Khandoba Temple: Iconic temple and spiritual hub in Jejuri.</li>
+                            <li>Fort Heritage: Explore Jejuri Fort and historic Purandar Fort.</li>
+                            <li>Pilgrimage: Visit the revered Morgaon Ganpati Temple.</li>
+                        </ul>
+                    </div>
+                    <!-- USPs -->
+                    <div class="investment-feature-card">
+                        <h3 class="investment-feature-title">Seamless Convenience</h3>
+                        <ul class="investment-feature-list">
+                            <li>Healthcare: Multiple hospitals within 10 minutes.</li>
+                            <li>Education: Renowned institutes reachable in 30 minutes.</li>
+                            <li>Connectivity: Excellent access to highways, metro, and airport. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Enquiry Button -->
+
+        <!-- <div class="enquiry-btn">
         Enquiry Now
       </div> -->
-      <!-- benefits section -->
+        <!-- benefits section -->
 
-      <section class="benefits-section">
-        <h1 class="benefits-title">
-        Where Tradition Meets Transformation <br /><span class="gold2">Golden Jejuri</span>
-        </h1>
-
-        <!-- First Row: 2 Rectangular Cards -->
-        <div class="benefits-container first-row">
-          <div class="benefit-card rectangular-card">
-            <img
-              class="benefit-icon"
-              src="./assets/images/demand.webp"
-              alt="Icon 1"
-            />
-            <h2 class="benefit-title">Thriving Commercial & Housing Demand</h2>
-            <p class="benefit-description">
-              Business, industries & families are gravitating towards this
-              corridor, ensuring land value sky rockets.
-            </p>
-          </div>
-          <div class="benefit-card rectangular-card">
-            <img
-              class="benefit-icon"
-              src="./assets/images/diagram.webp"
-              alt="Icon 2"
-            />
-            <h2 class="benefit-title">2X - 3X Appreciation Potential</h2>
-            <p class="benefit-description">
-              Early investors are set to reap 2x to 3x returns as Jejuri rapidly
-              evolves into Maharashtra's next investment goldmine.
-            </p>
-          </div>
-        </div>
-
-        <!-- Second Row: 3 Smaller Cards -->
-        <div class="benefits-container second-row">
-          <div class="benefit-card">
-            <img
-              class="benefit-icon"
-              src="./assets/images/leaf.webp"
-              alt="Icon 3"
-            />
-            <h2 class="benefit-title">Aerotopolis Developers</h2>
-            <p class="benefit-description">
-              Anchoring logistics, agro-processing and high demand residential
-              growth.
-            </p>
-          </div>
-          <div class="benefit-card">
-            <img
-              class="benefit-icon"
-              src="./assets/images/airplane-mode.webp"
-              alt="Icon 4"
-            />
-            <h2 class="benefit-title">Airport Road Expansion</h2>
-            <p class="benefit-description">
-              A golden pathway directly linking Jejuri to Pune's future global
-              aviation hub.
-            </p>
-          </div>
-          <div class="benefit-card">
-            <img
-              class="benefit-icon"
-              src="./assets/images/walking-man.webp"
-              alt="Icon 5"
-            />
-            <h2 class="benefit-title">Scenic Surrounding</h2>
-            <p class="benefit-description">
-              Discover your dream plot amidst scenic surroundings – where nature
-              meets opportunity!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- USPS Section -->
-
-      <section class="connectivity-section flex flex-col items-center p-4">
-        <div class="connectivity-header w-full text-center">
-          <h4 class="benefits-title">
-            Linking Progress and Prosperity
-            <br />
-            <span class="gold2">Golden Connectivity</span>
-          </h4>
-        </div>
-
-        <div
-          class="connectivity-card-container h-auto py-12 w-full bg-white rounded-xl flex flex-col lg:flex-row lg:px-4 items-center gap-12 justify-center"
-        >
-          <div
-            class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between"
-          >
-            <div
-              class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500"
-            >
-              <img
-                src="/assets/images/benefit1.webp"
-                class="image-content w-full h-full rounded-t-md object-cover"
-                alt="Strategic Location"
-              />
-            </div>
-            <h1 class="card-title text-2xl text-center font-semibold">
-              Strategic Location
-            </h1>
-            <p
-              class="card-description w-full text-md font-normal text-center mb-4 px-2"
-            >
-              Positioned at the heart of Pune's expanding industrial and
-              residential belt
-            </p>
-          </div>
-          <div
-            class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between"
-          >
-            <div
-              class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500"
-            >
-              <img
-                src="/assets/images/benefit2.webp"
-                class="image-content w-full h-full rounded-t-md object-cover"
-                alt="Unmatched Connectivity"
-              />
-            </div>
-            <h1 class="card-title text-2xl text-center font-semibold">
-              Unmatched Connectivity
-            </h1>
-            <p
-              class="card-description w-full text-md font-normal text-center mb-4 px-2"
-            >
-              Proposed Purandar International Airport - Minutes away, boosting
-              travel and trade.
-            </p>
-          </div>
-          <div
-            class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between"
-          >
-            <div
-              class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500"
-            >
-              <img
-                src="/assets/images/benefit3.webp"
-                class="image-content w-full h-full rounded-t-md object-cover"
-                alt="Swargate-Saswad Metro Extension"
-              />
-            </div>
-            <h1 class="card-title text-2xl text-center font-semibold">
-              Swargate-Saswad<br />Metro Extension
-            </h1>
-            <p
-              class="card-description w-full text-md font-normal text-center mb-4 px-2"
-            >
-              Seamless access to Pune's core business & regional transport hubs.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="connectivity-card-container h-auto py-12 w-full bg-white rounded-xl flex flex-col lg:flex-row lg:px-4 items-center gap-12 justify-center"
-        >
-          <div
-            class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between"
-          >
-            <div
-              class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500"
-            >
-              <img
-                src="/assets/images/benefit4.webp"
-                class="image-content w-full h-full rounded-t-md object-cover"
-                alt="Seamless Connectivity"
-              />
-            </div>
-            <h1 class="card-title text-2xl text-center font-semibold">
-              Seamless Connectivity
-            </h1>
-            <p
-              class="card-description w-full text-md font-normal text-center mb-4 px-2"
-            >
-              Six-lane Saswad Highway connecting Hadapsar & Baramati. Direct
-              access to Pandharpur, Pune, and Solapur with NH65.
-            </p>
-          </div>
-          <div
-            class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between"
-          >
-            <div
-              class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500"
-            >
-              <img
-                src="/assets/images/benefit5.webp"
-                class="image-content w-full h-full rounded-t-md object-cover"
-                alt="Natural Advantage"
-              />
-            </div>
-            <h1 class="card-title text-2xl text-center font-semibold">
-              Natural Advantage
-            </h1>
-            <p
-              class="card-description w-full text-md font-normal text-center mb-4 px-2"
-            >
-              Close to the resourceful Nazare Dam, ensuring sustainable
-              development and natural reserves.
-            </p>
-          </div>
-          <div
-            class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between"
-          >
-            <div
-              class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500"
-            >
-              <img
-                src="/assets/images/benefit6.webp"
-                class="image-content w-full h-full rounded-t-md object-cover"
-                alt="Future-Ready Infrastructure"
-              />
-            </div>
-            <h1 class="card-title text-2xl text-center font-semibold">
-              Future-Ready Infrastructure
-            </h1>
-            <p
-              class="card-description w-full text-md font-normal text-center mb-4 px-2"
-            >
-              Positioned at the heart of Pune's expanding industrial and
-              residential belt
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Gallery Section  -->
-
-      <section class="w-full h-screen px-2 py-4">
-        <div class="w-full h-full">
-          <div class="w-full">
+        <section class="benefits-section">
             <h1 class="benefits-title">
-              Crafted To <span class="gold2">SHINE</span>
+                Where Tradition Meets Transformation <br /><span class="gold2">Golden Jejuri</span>
             </h1>
-          </div>
-          <div
-            class="h-[40%] lg:h-[60%] w-full image-content flex nowrap overflow-x-auto gap-2 px-8"
-          >
-            <img
-              src="/assets/images/hero1.webp"
-              class="w-full h-full object-cover rounded-xl slide"
-              alt=""
-            />
-            <img
-              src="/assets/images/hero2.webp"
-              class="w-full h-full object-cover rounded-xl slide"
-              alt=""
-            />
-            <img
-              src="/assets/images/hero3.webp"
-              class="w-full h-full object-cover rounded-xl slide"
-              alt=""
-            />
-            <img
-              src="/assets/images/Ampitheatre 01.webp"
-              class="w-full h-full object-cover rounded-xl slide"
-              alt=""
-            />
-            <img
-              src="/assets/images/Clubhouse 01.webp"
-              class="w-full h-full object-cover rounded-xl slide"
-              alt=""
-            />
-            <img
-              src="/assets/images/Party Lawn.webp"
-              class="w-full h-full object-cover rounded-xl slide"
-              alt=""
-            />
-            <img
-              src="/assets/images/Pool Cam.webp"
-              class="w-full h-full object-cover rounded-xl slide"
-              alt=""
-            />
-            <img
-              src="/assets/images/mountain-with-cosmos-blooming-illustration-ai-generativexa.webp"
-              class="w-full h-full object-cover rounded-xl slide"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      
+
+            <!-- First Row: 2 Rectangular Cards -->
+            <div class="benefits-container first-row">
+                <div class="benefit-card rectangular-card">
+                    <img class="benefit-icon" src="./assets/images/demand.webp" alt="Icon 1" />
+                    <h2 class="benefit-title">Thriving Commercial & Housing Demand</h2>
+                    <p class="benefit-description">
+                        Business, industries & families are gravitating towards this
+                        corridor, ensuring land value sky rockets.
+                    </p>
+                </div>
+                <div class="benefit-card rectangular-card">
+                    <img class="benefit-icon" src="./assets/images/diagram.webp" alt="Icon 2" />
+                    <h2 class="benefit-title">2X - 3X Appreciation Potential</h2>
+                    <p class="benefit-description">
+                        Early investors are set to reap 2x to 3x returns as Jejuri rapidly
+                        evolves into Maharashtra's next investment goldmine.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Second Row: 3 Smaller Cards -->
+            <div class="benefits-container second-row">
+                <div class="benefit-card">
+                    <img class="benefit-icon" src="./assets/images/leaf.webp" alt="Icon 3" />
+                    <h2 class="benefit-title">Aerotopolis Developers</h2>
+                    <p class="benefit-description">
+                        Anchoring logistics, agro-processing and high demand residential
+                        growth.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <img class="benefit-icon" src="./assets/images/airplane-mode.webp" alt="Icon 4" />
+                    <h2 class="benefit-title">Airport Road Expansion</h2>
+                    <p class="benefit-description">
+                        A golden pathway directly linking Jejuri to Pune's future global
+                        aviation hub.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <img class="benefit-icon" src="./assets/images/walking-man.webp" alt="Icon 5" />
+                    <h2 class="benefit-title">Scenic Surrounding</h2>
+                    <p class="benefit-description">
+                        Discover your dream plot amidst scenic surroundings – where nature
+                        meets opportunity!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- USPS Section -->
+
+        <section class="connectivity-section flex flex-col items-center p-4">
+            <div class="connectivity-header w-full text-center">
+                <h4 class="benefits-title">
+                    Linking Progress and Prosperity
+                    <br />
+                    <span class="gold2">Golden Connectivity</span>
+                </h4>
+            </div>
+
+            <div
+                class="connectivity-card-container h-auto py-12 w-full bg-white rounded-xl flex flex-col lg:flex-row lg:px-4 items-center gap-12 justify-center">
+                <div
+                    class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
+                    <div class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
+                        <img src="/assets/images/benefit1.webp"
+                            class="image-content w-full h-full rounded-t-md object-cover" alt="Strategic Location" />
+                    </div>
+                    <h1 class="card-title text-2xl text-center font-semibold">
+                        Strategic Location
+                    </h1>
+                    <p class="card-description w-full text-md font-normal text-center mb-4 px-2">
+                        Positioned at the heart of Pune's expanding industrial and
+                        residential belt
+                    </p>
+                </div>
+                <div
+                    class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
+                    <div class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
+                        <img src="/assets/images/benefit2.webp"
+                            class="image-content w-full h-full rounded-t-md object-cover"
+                            alt="Unmatched Connectivity" />
+                    </div>
+                    <h1 class="card-title text-2xl text-center font-semibold">
+                        Unmatched Connectivity
+                    </h1>
+                    <p class="card-description w-full text-md font-normal text-center mb-4 px-2">
+                        Proposed Purandar International Airport - Minutes away, boosting
+                        travel and trade.
+                    </p>
+                </div>
+                <div
+                    class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
+                    <div class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
+                        <img src="/assets/images/benefit3.webp"
+                            class="image-content w-full h-full rounded-t-md object-cover"
+                            alt="Swargate-Saswad Metro Extension" />
+                    </div>
+                    <h1 class="card-title text-2xl text-center font-semibold">
+                        Swargate-Saswad<br />Metro Extension
+                    </h1>
+                    <p class="card-description w-full text-md font-normal text-center mb-4 px-2">
+                        Seamless access to Pune's core business & regional transport hubs.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="connectivity-card-container h-auto py-12 w-full bg-white rounded-xl flex flex-col lg:flex-row lg:px-4 items-center gap-12 justify-center">
+                <div
+                    class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
+                    <div class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
+                        <img src="/assets/images/benefit4.webp"
+                            class="image-content w-full h-full rounded-t-md object-cover" alt="Seamless Connectivity" />
+                    </div>
+                    <h1 class="card-title text-2xl text-center font-semibold">
+                        Seamless Connectivity
+                    </h1>
+                    <p class="card-description w-full text-md font-normal text-center mb-4 px-2">
+                        Six-lane Saswad Highway connecting Hadapsar & Baramati. Direct
+                        access to Pandharpur, Pune, and Solapur with NH65.
+                    </p>
+                </div>
+                <div
+                    class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
+                    <div class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
+                        <img src="/assets/images/benefit5.webp"
+                            class="image-content w-full h-full rounded-t-md object-cover" alt="Natural Advantage" />
+                    </div>
+                    <h1 class="card-title text-2xl text-center font-semibold">
+                        Natural Advantage
+                    </h1>
+                    <p class="card-description w-full text-md font-normal text-center mb-4 px-2">
+                        Close to the resourceful Nazare Dam, ensuring sustainable
+                        development and natural reserves.
+                    </p>
+                </div>
+                <div
+                    class="connectivity-card shadow-md w-[80%] md:w-[50%] lg:w-[30%] xl:w-[25%] bg-white h-[60vh] pb-4 rounded-xl flex flex-col items-center justify-between">
+                    <div class="card-image w-full rounded-t-xl overflow-hidden h-[60%] bg-yellow-500">
+                        <img src="/assets/images/benefit6.webp"
+                            class="image-content w-full h-full rounded-t-md object-cover"
+                            alt="Future-Ready Infrastructure" />
+                    </div>
+                    <h1 class="card-title text-2xl text-center font-semibold">
+                        Future-Ready Infrastructure
+                    </h1>
+                    <p class="card-description w-full text-md font-normal text-center mb-4 px-2">
+                        Positioned at the heart of Pune's expanding industrial and
+                        residential belt
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities Section  -->
+
+        <section class="w-full h-auto flex flex-col justify-center items-center py-1">
+            <div class="w-[90%] h-[90%] flex flex-col justify-center items-center md:px-12">
+                <div class="w-full">
+                    <h1 class="text-2xl text-center">Golden Amenities</h1>
+                    <h1 class="text-xl text-center">Elevating Modern Lifestyle</h1>
+                </div>
+                <div
+                    class="w-full h-[90vh] lg:w-[80%] xl:w-[80%] xl:px-4 xl:w-full px-1 py-4 mt-12 bg-[#c5964a] rounded-xl flex flex-col md:flex-row md:gap-2 xl:gap-8 items-center">
+                    <div
+                        class="w-full  lg:w-1/2 h-full p-4 lg:py-12 lg:px-16 bg-white rounded-t-xl md:rounded-xl flex flex-col justify-between gap-4 lg:gap-8">
+                        <h1 class="text-xl font-semibold lg:text-2xl xl:text-4xl ">Family-Centric Comforts</h1>
+                        <p class="text-sm">Designed for modern living, offering relaxation, recreation, and secure family-friendly spaces.</p>
+                        <div class="flex flex-col gap-2">
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Kids Play zone</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Grand ClubHouse</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Outdoor Study Kiosk</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Toddler Play Area</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Lush Lawn Mound</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Instagrammable Selfie Points</span>
+                            </h1>
+                        </div>
+
+                    </div>
+                    <div class="w-full h-full overflow-hidden">
+                        <img src="/assets/images/hero3.webp"
+                            class="rounded-b-2xl md:rounded-xl w-full h-full object-cover" alt="">
+                    </div>
+                </div>
+                <div
+                    class="w-full h-[90vh] lg:w-[80%] xl:w-[80%] xl:px-4 xl:w-full px-1 py-4 mt-12 bg-[#7f8c8d] rounded-xl flex flex-col md:flex-row md:gap-2 xl:gap-8 items-center">
+                    <div class="w-full h-full overflow-hidden">
+                        <img src="/assets/images/hero2.webp"
+                            class="rounded-t-2xl md:rounded-xl w-full h-full object-cover" alt="">
+                    </div>
+                    <div
+                        class="w-full  lg:w-1/2 h-full p-4 lg:py-12 lg:px-16 bg-white rounded-b-xl md:rounded-xl flex flex-col justify-between gap-4 lg:gap-8">
+                        <h1 class="text-xl font-semibold lg:text-2xl xl:text-4xl ">Infrastructure and Security</h1>
+                        <p class="text-sm">Robust infrastructure with advanced security systems ensures safety, convenience, and peace of mind.</p>
+                        <div class="flex flex-col gap-2">
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#7f8c8d] px-4 py-1 rounded-full">
+                                <span>6M Wide Internal Driveway</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#7f8c8d] px-4 py-1 rounded-full">
+                                <span>Elegant Pole Lights</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#7f8c8d] px-4 py-1 rounded-full">
+                                <span>Perimeter Compound Wall</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#7f8c8d] px-4 py-1 rounded-full">
+                                <span>Signature Entrance Plaza</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#7f8c8d] px-4 py-1 rounded-full">
+                                <span>Grand Flag Pole</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#7f8c8d] px-4 py-1 rounded-full">
+                                <span>Multipurpose Store Room</span>
+                            </h1>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div
+                    class="w-full h-[90vh] lg:w-[80%] xl:w-[80%] xl:px-4 xl:w-full px-1 py-4 mt-12 bg-[#c5964a] rounded-xl flex flex-col md:flex-row md:gap-2 xl:gap-8 items-center">
+                    <div
+                        class="w-full lg:w-1/2 h-full p-4 lg:py-12 lg:px-16 bg-white rounded-t-xl md:rounded-xl flex flex-col justify-between gap-4 lg:gap-8">
+                        <h1 class="text-xl font-semibold lg:text-2xl xl:text-4xl ">Recreational Tresures</h1>
+                        <p class="text-sm">A perfect blend of leisure, fitness, and fun, thoughtfully designed to enrich your lifestyle. Offering serene environments and engaging activities, it caters to all age groups.</p>
+                        <div class="flex flex-col gap-2">
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Sparkling Swimming Pool</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>State-of-the-Art Open Gym</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Jogging Track</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Skating Rink for Leisure</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Basketball Court</span>
+                            </h1>
+                            <h1
+                                class="text-xs font-thin flex justify-between md:px-8 md:py-3 border md:border-2 md:text-sm border-[#c5964a] px-4 py-1 rounded-full">
+                                <span>Magnificient Temple</span>
+                            </h1>
+                        </div>
+
+                    </div>
+                    <div class="w-full h-full overflow-hidden">
+                        <img src="/assets/images/hero1.webp"
+                            class="rounded-b-2xl md:rounded-xl w-full h-full object-cover" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Gallery Section  -->
+
+        <section class="w-full h-screen px-2 py-4">
+            <div class="w-full h-full">
+                <div class="w-full">
+                    <h1 class="benefits-title">
+                        Crafted To <span class="gold2">SHINE</span>
+                    </h1>
+                </div>
+                <div class="h-[40%] lg:h-[60%] w-full image-content flex nowrap overflow-x-auto gap-2 px-8">
+                    <img src="/assets/images/hero1.webp" class="w-full h-full object-cover rounded-xl slide" alt="" />
+                    <img src="/assets/images/hero2.webp" class="w-full h-full object-cover rounded-xl slide" alt="" />
+                    <img src="/assets/images/hero3.webp" class="w-full h-full object-cover rounded-xl slide" alt="" />
+                    <img src="/assets/images/Ampitheatre 01.webp" class="w-full h-full object-cover rounded-xl slide"
+                        alt="" />
+                    <img src="/assets/images/Clubhouse 01.webp" class="w-full h-full object-cover rounded-xl slide"
+                        alt="" />
+                    <img src="/assets/images/Party Lawn.webp" class="w-full h-full object-cover rounded-xl slide"
+                        alt="" />
+                    <img src="/assets/images/Pool Cam.webp" class="w-full h-full object-cover rounded-xl slide"
+                        alt="" />
+                    <img src="/assets/images/mountain-with-cosmos-blooming-illustration-ai-generativexa.webp"
+                        class="w-full h-full object-cover rounded-xl slide" alt="" />
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- footer  -->
+
     <footer
-      class="w-full h-auto md:h-[20vh] bg-black flex flex-col md:flex-row px-4 py-4 items-center justify-between gap-4"
-    >
-      <div class="w-[30%] h-full flex items-center justify-center">
-        <h1 class="text-sm text-white">
-          The Project has been registered via MahaRERA number : xxxxxxxxxx and
-          the details are available on the website
-          <a href="#"> <u>https://maharera.mahaonline.gov.in</u></a>
-          under registered projects.
-        </h1>
-      </div>
-      <div class="flex items-center justify-center gap-8">
-        <div class="w-full h-[20%] flex items-center bg-white justify-center">
-          <img
-            class="w-[80px] h-[80px] object-cover"
-            src="/assets/images/logo2.webp"
-          />
+        class="w-full h-auto md:h-[20vh] bg-black flex flex-col md:flex-row px-4 py-4 items-center justify-between gap-4">
+        <div class="w-[30%] h-full flex items-center justify-center">
+            <h1 class="text-sm text-white">
+                The Project has been registered via MahaRERA number : xxxxxxxxxx and
+                the details are available on the website
+                <a href="#"> <u>https://maharera.mahaonline.gov.in</u></a>
+                under registered projects.
+            </h1>
         </div>
-        <div class="w-full h-[20%] flex items-center bg-white justify-center">
-          <img
-            class="w-[80px] h-[80px] object-cover"
-            src="/assets/images/logo2.webp"
-          />
+        <div class="flex items-center justify-center gap-8">
+            <div class="w-full h-[20%] flex items-center bg-white justify-center">
+                <img class="w-[80px] h-[80px] object-cover" src="/assets/images/logo2.webp" />
+            </div>
+            <div class="w-full h-[20%] flex items-center bg-white justify-center">
+                <img class="w-[80px] h-[80px] object-cover" src="/assets/images/logo2.webp" />
+            </div>
+            <div class="w-full h-[20%] flex items-center justify-center">
+                <img class="w-[80px] h-[80px] object-cover" src="/assets/images/public/QR.jpeg" />
+            </div>
         </div>
-        <div class="w-full h-[20%] flex items-center justify-center">
-          <img
-            class="w-[80px] h-[80px] object-cover"
-            src="/assets/images/public/QR.jpeg"
-          />
-        </div>
-      </div>
     </footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        crossorigin="anonymous"></script>
     <script src="./assets/scripts/script.js"></script>
-  </body>
+</body>
 </html>
