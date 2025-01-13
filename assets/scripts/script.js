@@ -80,18 +80,22 @@ window.addEventListener("wheel", function (event) {
 //    const slides = document.querySelectorAll('.carousel-slide');
 //    let currentIndex = 0;
    
-   // Auto-carousel function
-   function moveCarousel() {
-     currentIndex++;
-     if (currentIndex >= slides.length) {
-       currentIndex = 0;
-     }
-     const offset = currentIndex * -100;
-     carousel.style.transform = `translateX(${offset}%)`;
-   }
-   
-   // Start the carousel
-   setInterval(moveCarousel, 3000);
+// Auto-carousel functionality
+const carousel = document.querySelector('.carousel');
+const slides = document.querySelectorAll('.carousel-slide');
+let currentIndex = 0;
+
+function moveCarousel() {
+    currentIndex++;
+    if (currentIndex >= slides.length) {
+        currentIndex = 0; // Reset to the first slide
+    }
+    const offset = currentIndex * -100; // Calculate the offset
+    carousel.style.transform = `translateX(${offset}%)`;
+}
+
+// Start the auto-carousel
+setInterval(moveCarousel, 3000);
 
 
 
