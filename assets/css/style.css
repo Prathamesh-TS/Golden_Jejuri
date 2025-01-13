@@ -803,14 +803,24 @@ body {
 .investment-section-container {
   width: 100%;
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .investment-content-wrapper {
+  padding: 40px;
   display: flex;
+  background-image: url(/assets/images/public/golden-bg.png);
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+  border-radius: 20px;
   flex-direction: column;
   gap: 20px;
-  max-width: 1350px;
-  margin: 0 auto;
+  /* max-width: 1350px; */
+  margin: 0 10px;
 }
 
 @media (min-width: 768px) {
@@ -921,10 +931,16 @@ body {
 /* Mobile View Adjustments */
 @media (max-width: 767px) {
   .investment-feature-card {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px;
+    padding: 5px;
+    /* margin-bottom: 5px; */
+
+  }
+  .investment-feature-card:last-child{
+    margin-bottom: 20px;
+  }
+  .investment-content-wrapper{
+    padding: 5px;
   }
 
   .investment-info-column {
