@@ -964,13 +964,13 @@ body {
 }
 
 /* Enquiry Button */
-/* .enquiry-btn {
+.enquiry-btn {
   position: fixed;
   right: 0; 
   top: 50%;
   transform: translateY(-50%) rotate(-90deg); 
   transform-origin: center; 
-  background-color: var(--gold);
+  background-color: #c5964a;
   color: white;
   font-weight: bold;
   padding: 10px 20px; 
@@ -982,5 +982,5 @@ body {
 }
 
 .enquiry-btn:hover {
-  background-color: var(--gold-dark); 
-} */
+  background-color: #bf8a36; 
+}
